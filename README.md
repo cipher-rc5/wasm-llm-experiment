@@ -114,6 +114,3 @@ colors: {
 ## License
 
 MIT License
-
-
-repomix --style markdown -o _v01-llm.md --verbose --parsable-style --no-file-summary --include src,public,bunfig.toml,package.json,tsconfig.json,tailwind.config.ts

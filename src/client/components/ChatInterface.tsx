@@ -3,7 +3,7 @@ import { type ChatMessage } from '../App';
 
 interface ChatInterfaceProps {
   messages: ChatMessage[];
-  onSendMessage: (message: string) => void; // Fixed arrow function syntax
+  onSendMessage: (message: string) => void;
   isProcessing: boolean;
 }
 
@@ -105,10 +105,12 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, onSendMessage, 
       {/* Bottom Status */}
       <div className='flex justify-between items-center mt-6 text-xs font-mono text-cipher-gold/60'>
         <div>{messages.length > 0 ? `${messages.length} messages` : 'Ready to chat'}</div>
-        <div className='flex space-x-4'>
+        {
+          /*<div className='flex space-x-4'>
           <span>Translate</span>
           <span>Support</span>
-        </div>
+        </div>*/
+        }
       </div>
     </div>
   );

@@ -84,7 +84,7 @@ async function handleStaticFile(pathname: string): Promise<Response> {
   return new Response('Not Found', { status: 404 });
 }
 
-console.log(`🚀 Server running at http://localhost:${server.port}`);
-console.log(`📁 Serving from: public/ and src/`);
-console.log(`🎯 API available at: http://localhost:${server.port}/api/*`);
-console.log(`⚡ TypeScript compilation enabled`);
+console.log(` Server running at http://localhost:${server.port}`);
+console.log(` Serving from: public/ and src/`);
+console.log(` API available at: http://localhost:${server.port}/api/*`);
+console.log(` TypeScript compilation enabled`);

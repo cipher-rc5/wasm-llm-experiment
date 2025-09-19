@@ -21,6 +21,7 @@ const App: React.FC = () => {
   const initializeEngine = useCallback(async () => {
     try {
       const selectedModel = 'Hermes-3-Llama-3.1-8B-q4f32_1-MLC';
+      // const selectedModel = 'gemma-2-2b-it-q4f32_1-MLC-1k';
 
       const initProgressCallback = (progress: any) => {
         console.log('Loading progress:', progress);
