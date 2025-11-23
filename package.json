@@ -1,7 +1,20 @@
 {
   "name": "wasm-llm-experiment",
   "module": "index.ts",
-  "type": "module",
+  "dependencies": {
+    "@mlc-ai/web-llm": "^0.2.79",
+    "@tailwindcss/cli": "^4.1.17",
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3",
+    "bun-plugin-tailwind": "^0.0.15",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
   "private": true,
   "scripts": {
     "dev": "bun run --watch src/server.ts",
@@ -11,20 +24,5 @@
     "format:check": "dprint check",
     "type-check": "tsc --noEmit"
   },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "@mlc-ai/web-llm": "^0.2.79",
-    "@tailwindcss/cli": "^4.1.13",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "bun-plugin-tailwind": "^0.0.15",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13"
-  }
+  "type": "module"
 }
